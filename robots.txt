@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mcdigitalgrp.github.io/hopepages/sitemap.xml
