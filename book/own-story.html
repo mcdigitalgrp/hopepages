@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+<title>ஏழ்மையில் பிறந்தேன் உன்னதம் நோக்கி சென்றேன்</title>
+
+
+<style>
+
+/* Header */
+*{
+   margin: 0;
+}
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#003049;
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+
+/* Book Details */
+
+.book-section{
+padding:50px 20px;
+display:flex;
+justify-content:center;
+}
+
+.book-container{
+max-width:1000px;
+display:grid;
+grid-template-columns:300px 1fr;
+gap:40px;
+}
+
+.book-cover{
+width:100%;
+aspect-ratio:1 / 1.414;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+.book-title{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.book-author{
+color:#555;
+margin-bottom:10px;
+}
+
+.book-meta{
+display:flex;
+gap:20px;
+margin-bottom:15px;
+font-size:14px;
+}
+
+.book-price{
+font-size:22px;
+color:#e63946;
+margin-bottom:15px;
+}
+
+.book-desc{
+line-height:1.7;
+margin-bottom:20px;
+color:#444;
+}
+
+.book-buttons{
+display:flex;
+gap:15px;
+}
+
+.buy-btn{
+padding:10px 20px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.buy-btn:hover{
+background:#003049;
+}
+
+.preview-btn{
+padding:10px 20px;
+border:1px solid #003049;
+color:#003049;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+
+/* Book Info */
+
+.book-info-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.info-box{
+background:#f7f7f7;
+padding:15px;
+border-radius:6px;
+text-align:center;
+font-size:14px;
+}
+
+
+
+/* Footer */
+
+.footer{
+margin-top:60px;
+background:#003049;
+color:white;
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+.footer a{
+color:#ffd166;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+/* Tablet */
+
+@media (max-width:900px){
+
+.book-container{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.book-cover{
+max-width:300px;
+margin:auto;
+display:block;
+}
+
+.book-title{
+font-size:24px;
+}
+
+.book-info-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.header{
+flex-direction:column;
+gap:10px;
+padding:15px;
+}
+
+.nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav a{
+margin:5px 10px;
+font-size:13px;
+}
+
+.book-section{
+padding:30px 15px;
+}
+
+.book-container{
+gap:20px;
+}
+
+.book-title{
+font-size:22px;
+}
+
+.book-price{
+font-size:20px;
+}
+
+.book-buttons{
+flex-direction:column;
+}
+
+.buy-btn,
+.preview-btn{
+text-align:center;
+}
+
+.book-info-grid{
+grid-template-columns:1fr;
+}
+
+.footer{
+font-size:15px;
+padding:15px;
+}
+
+}
+
+</style>
+</head>
+
+
+<header class="header">
+
+<div class="logo">Hope Pages</div>
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="terms-condtion.html">Terms & Conditions</a>
+<a href="privacy-policy.html">Privacy Policy </a>
+</nav>
+
+</header>
+
+
+
+<section class="book-section">
+
+<div class="book-container">
+
+<img src="../images/hari/poor.jpg" class="book-cover">
+
+
+<div>
+
+<h1 class="book-title">ஏழ்மையில் பிறந்தேன் உன்னதம் நோக்கி சென்றேன்</h1>
+
+<p class="book-author">By Hari Prasath.M</p>
+
+<div class="book-meta">
+<span>Published: 2025</span>
+<span>Language: Tamil</span>
+</div>
+
+<div class="book-price">₹111</div>
+
+<p class="book-desc">
+இந்த புத்தகம் வாழ்க்கையில் வெற்றியை அடைய மன உறுதி, முயற்சி,
+மற்றும் தன்னம்பிக்கை எவ்வளவு முக்கியம் என்பதை விளக்கும்
+ஒரு ஊக்கமளிக்கும் கதை. வாசகர்களை சிந்திக்க வைக்கும்
+சிறந்த நாவல்.
+</p>
+
+<div class="book-buttons">
+
+<a href="https://www.amazon.in/dp/B0FK2J48ZH" target='_blank' class="buy-btn">Buy Now</a>
+
+<!-- <a href="#" class="preview-btn">Preview</a> -->
+
+</div>
+
+
+<!-- <div class="book-info-grid">
+
+<div class="info-box">
+<b>Pages</b>
+<p>120</p>
+</div>
+
+<div class="info-box">
+<b>Format</b>
+<p>PDF</p>
+</div>
+
+<div class="info-box">
+<b>Category</b>
+<p>Motivation</p>
+</div>
+
+</div> -->
+
+</div>
+
+</div>
+
+
+
+
+</section>
+
+
+<footer class="footer">
+
+<p>© 2026 Hope Pages. All Rights Reserved.</p>
+
+<p>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="terms-condtion.html">Terms & Conditions</a>
+<a href="privacy-policy.html">Privacy Policy </a>
+</p>
+
+</footer>
+
+</html>

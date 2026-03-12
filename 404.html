@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Hope Pages</title>
+
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <style>
+    
+
+/* ================= PAGE ================= */
+.error-page {
+  height: 100vh;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* container */
+.error-container {
+  max-width: 500px;
+}
+
+/* image */
+.error-img {
+  width: 220px;
+  
+  margin-bottom: 20px;
+}
+
+/* 404 number */
+.error-container h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+/* title */
+.error-container h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+/* message */
+.error-container p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* button */
+.home-btn {
+  display: inline-block;
+  background: #ff0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #fcbf49;
+  transform: translateY(-3px);
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .error-container h1 {
+    font-size: 70px;
+  }
+
+  .error-img {
+    width: 170px;
+  }
+
+  .error-container h2 {
+    font-size: 22px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <section class="error-page">
+
+    <div class="error-container">
+
+      <!-- Image -->
+      <img src="images/404.jpg" alt="404 illustration" class="error-img">
+
+      <!-- Text -->
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+
+      <p>
+        Oops! The page you are looking for doesn’t exist or has been moved.
+        Let’s go back to learning 📚
+      </p>
+
+      <!-- Button -->
+      <a href="index.html" class="home-btn">⬅ Back to Home</a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

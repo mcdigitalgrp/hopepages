@@ -1,0 +1,556 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+/* ===== Top Social (desktop) ===== */
+
+.top-social{
+background:#f2f2f2;
+text-align:right;
+padding:6px 20px;
+}
+
+.top-social a{
+margin-left:10px;
+color:black;
+font-size:18px;
+}
+.top-social a:hover{
+    color: #ff0000;
+}
+
+/* ===== Header ===== */
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 20px;
+border-bottom:1px solid #ddd;
+}
+
+/* logo */
+
+.logo img{
+height:40px;
+}
+
+/* menu icon */
+
+.menu-icon{
+font-size:24px;
+cursor:pointer;
+display:none;
+}
+.menu-icon:hover{
+    color: #ff0000;
+}
+
+/* search */
+
+.search-box{
+display:flex;
+align-items:center;
+border:1px solid #ccc;
+padding:4px 8px;
+border-radius:4px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+}
+
+.search-box i{
+color:black;
+}
+.search-box i:hover{
+    color: #ff0000;
+}
+
+/* ===== Desktop Nav ===== */
+
+.desktop-nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+.desktop-nav a{
+text-decoration:none;
+color:black;
+
+}
+.desktop-nav a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar{
+position:fixed;
+top:0;
+left:-260px;
+width:260px;
+height:100%;
+background:#fff;
+box-shadow:2px 0 10px rgba(0,0,0,0.1);
+padding:20px;
+transition:0.3s;
+display:flex;
+flex-direction:column;
+z-index:1000;
+}
+
+.sidebar a{
+margin:12px 0;
+text-decoration:none;
+color:black;
+font-size:18px;
+}
+.sidebar a:hover{
+    color: #ff0000;
+}
+
+.close-btn{
+font-size:28px;
+cursor:pointer;
+margin-bottom:20px;
+}
+.close-btn:hover{
+    color: #ff0000;
+}
+
+/* sidebar social */
+
+.sidebar-social{
+margin-top:auto;
+}
+
+.sidebar-social a{
+margin-right:10px;
+font-size:20px;
+color:black;
+}
+
+
+/* ===== Mobile ===== */
+
+@media(max-width:768px){
+
+.top-social{
+display:none;
+}
+
+.desktop-nav{
+display:none;
+}
+
+.menu-icon{
+display:block;
+}
+
+.logo{
+margin:auto;
+}
+
+.search-box input{
+width:90px;
+}
+
+}
+
+/* ===== Hero Section ===== */
+/* ===== Hero Section ===== */
+
+.hero{
+
+padding:60px 20px;
+}
+
+.hero-container{
+max-width:1100px;
+
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+/* image */
+
+.hero-image img{
+width:300px;
+max-width:100%;
+
+}
+
+/* content */
+
+.hero-content{
+max-width:500px;
+}
+
+.hero-content h1{
+font-size:36px;
+margin-bottom:15px;
+color:#222;
+}
+
+.hero-content p{
+font-size:16px;
+line-height:1.6;
+margin-bottom:20px;
+color:#555;
+}
+
+/* button */
+
+.hero-btn{
+display:inline-block;
+background:#003049;
+color:white;
+padding:12px 30px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+
+/* ===== Mobile ===== */
+
+@media(max-width:768px){
+
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:220px;
+}
+
+.hero-content h1{
+font-size:28px;
+}
+
+}
+
+/* ===== Inspiration Section ===== */
+
+.inspiration{
+padding:60px 20px;
+background:#ffffff;
+text-align:center;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:40px;
+color:#222;
+}
+
+/* grid */
+
+.inspiration-grid{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+/* card */
+
+.inspiration-card{
+background:#f8f9ff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.inspiration-card img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.inspiration-card h3{
+margin-bottom:10px;
+color:#333;
+}
+
+.inspiration-card p{
+font-size:15px;
+line-height:1.6;
+color:#555;
+}
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+.inspiration-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ===== Important Books ===== */
+
+.books-section{
+padding:30px 20px;
+}
+
+.section-title{
+font-size:20px;
+margin:25px 0 15px;
+}
+
+/* horizontal row */
+
+.book-row{
+display:flex;
+gap:18px;
+overflow-x:auto;
+padding-bottom:10px;
+scroll-behavior:smooth;
+}
+
+/* book card */
+
+.book-card{
+min-width:170px;
+max-width:170px;
+background:#fff;
+border-radius:8px;
+padding:10px;
+display:flex;
+flex-direction:column;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* book cover A4 */
+
+.book-cover{
+width:100%;
+aspect-ratio:1 / 1.414;
+object-fit:cover;
+border-radius:4px;
+}
+
+/* title */
+
+.book-title{
+font-size:13px;
+line-height:1.3;
+margin:8px 0 4px;
+}
+
+/* author */
+
+.book-author{
+font-size:11px;
+color:#777;
+margin-bottom:6px;
+}
+
+/* info */
+
+.book-info{
+display:flex;
+justify-content:space-between;
+font-size:11px;
+margin-bottom:8px;
+}
+
+.price{
+color:#e63946;
+font-weight:600;
+}
+
+.free{
+color:green;
+}
+
+/* button */
+
+.buy-btn{
+margin-top:auto;
+padding:6px;
+font-size:11px;
+text-align:center;
+text-decoration:none;
+background:#ff0000;
+color:white;
+border-radius:4px;
+display:block;
+}
+
+.buy-btn:hover{
+background:#003049;
+}
+
+
+
+
+/* ===== Labels Section ===== */
+
+.labels{
+padding:60px 20px;
+text-align:center;
+}
+
+.labels-grid{
+max-width:900px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.label{
+padding:10px 18px;
+background:#f1f1f1;
+border-radius:20px;
+font-size:14px;
+color:#333;
+}
+
+/* hover effect */
+
+.label:hover{
+background:#003049;
+color:white;
+cursor:default;
+}
+
+/* ===== Newsletter ===== */
+
+.newsletter{
+background:#003049;
+padding:60px 20px;
+text-align:center;
+color:white;
+}
+
+.newsletter-box{
+max-width:600px;
+margin:auto;
+}
+
+.newsletter h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.newsletter p{
+margin-bottom:20px;
+}
+
+/* form */
+
+.newsletter form{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.newsletter input{
+padding:12px;
+border:none;
+border-radius:4px;
+width:250px;
+}
+
+.newsletter button{
+padding:12px 20px;
+border:none;
+background:black;
+color:white;
+border-radius:4px;
+cursor:pointer;
+}
+
+.newsletter button:hover{
+background:#000;
+}
+
+/* ===== Footer ===== */
+
+.footer{
+background:#111;
+color:#ddd;
+padding-top:50px;
+}
+
+.footer-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+padding:0 20px 40px;
+}
+
+/* footer logo */
+
+.footer-logo{
+width:120px;
+margin-bottom:10px;
+}
+
+/* headings */
+
+.footer-box h3{
+margin-bottom:15px;
+color:white;
+}
+
+/* links */
+
+.footer-box a{
+display:block;
+text-decoration:none;
+color:#ccc;
+margin-bottom:8px;
+font-size:14px;
+}
+
+.footer-box a:hover{
+color:white;
+}
+
+/* social icons */
+
+.footer-social a{
+margin-right:10px;
+font-size:18px;
+color:#ccc;
+}
+
+.footer-social a:hover{
+color:white;
+}
+
+/* bottom */
+
+.footer-bottom{
+text-align:center;
+padding:15px;
+border-top:1px solid #333;
+font-size:14px;
+}
