@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search - Hope Pages</title>
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+font-family:Arial;
+background:#fafafa;
+}
+
+/* search header */
+
+.search-header{
+display:flex;
+align-items:center;
+gap:10px;
+padding:15px;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+.back{
+font-size:22px;
+text-decoration:none;
+color:black;
+}
+.back:hover{
+    color: #ff0000;
+}
+
+.search-box{
+flex:1;
+display:flex;
+border:1px solid #ccc;
+padding:6px;
+border-radius:4px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+flex:1;
+}
+
+.search-box button{
+border:none;
+background:black;
+color:white;
+padding:6px 12px;
+cursor:pointer;
+}
+.search-box button:hover{
+    background-color: #ff0000;
+}
+/* results */
+
+.results{
+max-width:900px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:6px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<!-- Search Header -->
+
+<div class="search-header">
+
+<a href="index.html" class="back">⬅</a>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search articles...">
+<button onclick="searchPosts()">Search</button>
+</div>
+
+</div>
+
+
+<!-- Results -->
+
+<div class="results" id="results"></div>
+
+
+<script>
+
+const posts = [
+
+{
+title:"ஏழ்மையில் பிறந்தேன் உன்னதம் நோக்கி சென்றேன்",
+link:"post-office-rd.html",
+keywords:"hari books tamil books"
+},
+
+{
+title:"FD vs RD – எது சிறந்தது?",
+link:"fd-vs-rd.html",
+keywords:"hari books tamil books"
+},
+
+{
+title:"நான் கண்ட தெய்வம்",
+link:"sip-start.html",
+keywords:"hari books tamil books"
+},
+
+{
+title:"வெற்றி உன்னிடம் Vetri unnidam:  an inspiring story of triumph",
+link:"gold-investment.html",
+keywords:"hari books tamil books"
+}
+
+];
+
+
+function searchPosts(){
+
+let input =
+document.getElementById("searchInput").value.trim().toLowerCase();
+
+let results = document.getElementById("results");
+
+results.innerHTML="";
+
+/* empty search fix */
+
+if(input === ""){
+results.innerHTML="<p>Please enter a keyword</p>";
+return;
+}
+
+let found=false;
+
+posts.forEach(post=>{
+
+if(post.title.toLowerCase().includes(input)
+|| post.keywords.includes(input)){
+
+found=true;
+
+results.innerHTML +=
+
+`<div class="card">
+<a href="${post.link}">
+${post.title}
+</a>
+</div>`;
+
+}
+
+});
+
+if(!found){
+results.innerHTML="<p>No results found</p>";
+}
+
+}
+
+
+/* ENTER key search */
+
+document.getElementById("searchInput")
+.addEventListener("keypress",function(event){
+
+if(event.key === "Enter"){
+searchPosts();
+}
+
+});
+
+</script>
+
+
+</body>
+</html>
