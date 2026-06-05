@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+<title>Animals Colouring Book for Kids</title>
+
+
+<style>
+
+/* Header */
+*{
+   margin: 0;
+}
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#003049;
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+
+/* Book Details */
+
+.book-section{
+padding:50px 20px;
+display:flex;
+justify-content:center;
+}
+
+.book-container{
+max-width:1000px;
+display:grid;
+grid-template-columns:300px 1fr;
+gap:40px;
+}
+
+.book-cover{
+width:100%;
+aspect-ratio:1 / 1.414;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+.book-title{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.book-author{
+color:#555;
+margin-bottom:10px;
+}
+
+.book-meta{
+display:flex;
+gap:20px;
+margin-bottom:15px;
+font-size:14px;
+}
+
+.book-price{
+font-size:22px;
+color:#e63946;
+margin-bottom:15px;
+}
+
+.book-desc{
+line-height:1.7;
+margin-bottom:20px;
+color:#444;
+}
+
+.book-buttons{
+display:flex;
+gap:15px;
+}
+
+.buy-btn{
+padding:10px 20px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.buy-btn:hover{
+background:#003049;
+}
+
+.preview-btn{
+padding:10px 20px;
+border:1px solid #003049;
+color:#003049;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+
+/* Book Info */
+
+.book-info-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.info-box{
+background:#f7f7f7;
+padding:15px;
+border-radius:6px;
+text-align:center;
+font-size:14px;
+}
+
+
+
+/* Footer */
+
+.footer{
+margin-top:60px;
+background:#003049;
+color:white;
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+.footer a{
+color:#ffd166;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+/* Tablet */
+
+@media (max-width:900px){
+
+.book-container{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.book-cover{
+max-width:300px;
+margin:auto;
+display:block;
+}
+
+.book-title{
+font-size:24px;
+}
+
+.book-info-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.header{
+flex-direction:column;
+gap:10px;
+padding:15px;
+}
+
+.nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav a{
+margin:5px 10px;
+font-size:13px;
+}
+
+.book-section{
+padding:30px 15px;
+}
+
+.book-container{
+gap:20px;
+}
+
+.book-title{
+font-size:22px;
+}
+
+.book-price{
+font-size:20px;
+}
+
+.book-buttons{
+flex-direction:column;
+}
+
+.buy-btn,
+.preview-btn{
+text-align:center;
+}
+
+.book-info-grid{
+grid-template-columns:1fr;
+}
+
+.footer{
+font-size:15px;
+padding:15px;
+}
+
+}
+
+</style>
+</head>
+
+
+<header class="header">
+
+<div class="logo">Hope Pages</div>
+
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+<a href="../terms-condtion.html">Terms & Conditions</a>
+<a href="../privacy-policy.html">Privacy Policy </a>
+</nav>
+
+</header>
+
+
+
+<section class="book-section">
+
+<div class="book-container">
+
+<img src="../images/gumroad/Animals-Colouring-Book-for-Kids.webp" class="book-cover">
+
+
+<div>
+
+<h1 class="book-title">Animals Colouring Book for Kids</h1>
+
+<p class="book-author">By hope pages</p>
+
+<div class="book-meta">
+<span>Published: 2026</span>
+<span>Language: English</span>
+<span>Dimensions: 8.5 x 11 inches</span>
+</div>
+
+<div class="book-price">₹150</div>
+<div class="book-buttons"> 
+
+<a href="https://hopepages.gumroad.com/l/animals-colouring-book-for-kids" target='_blank' class="buy-btn">Ebook</a>
+<a href="https://www.amazon.com/dp/B0H3VQ6B8W" target='_blank' class="buy-btn">Paperback</a>
+
+<!-- <a href="#" class="preview-btn">Preview</a> -->
+
+</div>
+
+<p class="book-desc">
+ Bring creativity to life with our fun and educational Animals Colouring Book for Kids! Filled with adorable animal illustrations, this book helps children develop imagination, creativity, focus, and fine motor skills while enjoying hours of coloring fun.
+
+Perfect for preschoolers, kindergarteners, and young learners, the book features easy-to-color animal designs that make learning about animals exciting and engaging.
+<br>
+<b>
+Features:
+</b>
+
+<br>
+Cute and kid-friendly animal illustrations <br>
+Large, easy-to-color pages <br>
+Encourages creativity and self-expression<br>
+Improves hand-eye coordination and concentration<br>
+Suitable for ages 3–6<br>
+
+Give your child a colorful learning adventure with this delightful animal coloring book!<br>
+<br>
+குழந்தைகளுக்கான விலங்குகள் நிறமிடும் புத்தகம்
+
+உங்கள் குழந்தைகளின் கற்பனை திறன் மற்றும் படைப்பாற்றலை வளர்க்கும் விலங்குகள் நிறமிடும் புத்தகம்! அழகான மற்றும் குழந்தைகளுக்கு பிடித்த விலங்குகளின் படங்களால் நிரம்பிய இந்த புத்தகம், நிறமிடும் மகிழ்ச்சியுடன் கற்றலையும் இணைக்கிறது.
+<br>
+முன்பள்ளி மற்றும் தொடக்கநிலை குழந்தைகளுக்கு ஏற்ற இந்த புத்தகம், எளிதாக நிறமிடக்கூடிய விலங்கு படங்களைக் கொண்டுள்ளது. இது குழந்தைகளின் கவனம், கை-கண் ஒருங்கிணைப்பு மற்றும் நுண்ணிய இயக்கத் திறன்களை மேம்படுத்த உதவுகிறது
+<br>
+<b>
+சிறப்பம்சங்கள்: 
+</b>
+<br>
+
+குழந்தைகளுக்குப் பிடித்த அழகான விலங்கு படங்கள் <br>
+பெரிய மற்றும் எளிதாக நிறமிடக்கூடிய பக்கங்கள்<br>
+படைப்பாற்றல் மற்றும் கற்பனை திறனை ஊக்குவிக்கும்<br>
+கவனக்குறைவு இல்லாமல் செயல்பட உதவும்<br>
+3 முதல் 6 வயது குழந்தைகளுக்கு ஏற்றது<br>
+
+உங்கள் குழந்தைக்கு நிறங்களும் மகிழ்ச்சியும் நிறைந்த கற்றல் அனுபவத்தை வழங்குங்கள்! 🐘🦁🐼🎨 <br>
+</p>
+
+
+
+
+<!-- <div class="book-info-grid">
+
+<div class="info-box">
+<b>Pages</b>
+<p>120</p>
+</div>
+
+<div class="info-box">
+<b>Format</b>
+<p>PDF</p>
+</div>
+
+<div class="info-box">
+<b>Category</b>
+<p>Motivation</p>
+</div>
+
+</div> -->
+
+</div>
+
+</div>
+
+
+
+
+</section>
+
+
+<footer class="footer">
+
+<p>© 2026 Hope Pages. All Rights Reserved.</p>
+
+<p>
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+<a href="../terms-condtion.html">Terms & Conditions</a>
+<a href="../privacy-policy.html">Privacy Policy </a>
+</p>
+
+</footer>
+
+</html>
