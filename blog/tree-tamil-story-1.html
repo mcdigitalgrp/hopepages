@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>அதிசய மரம்</title>
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+font-family:'Noto Sans Tamil', sans-serif;
+background:#f5f5f5;
+color:#222;
+}
+
+/* ===== HEADER ===== */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#003049;
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+/* ===== POST CONTAINER ===== */
+.post-container{
+max-width:850px;
+margin:25px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.post-title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.post-meta{
+color:gray;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.post-img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* ===== CONTENT ===== */
+.post-content p{
+font-size:17px;
+line-height:1.9;
+margin-bottom:18px;
+text-align:justify;
+}
+
+/* ===== MORAL ===== */
+.moral{
+background:#fff3cd;
+padding:18px;
+border-left:5px solid #ffc107;
+margin-top:25px;
+border-radius:8px;
+}
+
+.moral h3{
+margin-bottom:10px;
+}
+
+/* ===== SHARE ===== */
+.share-section{
+margin-top:35px;
+padding-top:20px;
+border-top:1px solid #ddd;
+}
+
+.share-section h3{
+margin-bottom:15px;
+}
+
+.share-icons{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.share-icons a,
+.share-icons button{
+padding:10px 15px;
+border:none;
+border-radius:6px;
+color:white;
+font-size:14px;
+cursor:pointer;
+text-decoration:none;
+}
+
+#whatsapp{
+background:#25D366;
+}
+
+#facebook{
+background:#1877F2;
+}
+
+#twitter{
+background:#1DA1F2;
+}
+
+.share-icons button{
+background:#222;
+}
+
+/* ===== RELATED POSTS ===== */
+.related-section{
+margin-top:45px;
+}
+
+.related-section h2{
+margin-bottom:20px;
+font-size:24px;
+}
+
+.related-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.related-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+text-decoration:none;
+color:#222;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.related-card:hover{
+transform:translateY(-5px);
+}
+
+.related-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.related-card-content{
+padding:12px;
+}
+
+.related-card h4{
+font-size:16px;
+margin-bottom:8px;
+}
+
+.related-card p{
+font-size:13px;
+color:gray;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+.header{
+padding:15px 20px;
+}
+
+.post-container{
+margin:15px;
+padding:18px;
+}
+
+.post-title{
+font-size:24px;
+}
+
+.post-img{
+height:230px;
+}
+
+.nav{
+display:none;
+}
+
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+background:#003049;
+color:white;
+padding:40px 20px;
+margin-top:50px;
+text-align:center;
+}
+
+.footer-container{
+max-width:1000px;
+margin:auto;
+}
+
+.footer-logo{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.footer-text{
+font-size:15px;
+color:#ddd;
+margin-bottom:20px;
+}
+
+.footer-links{
+margin-bottom:20px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+.footer-copy{
+font-size:13px;
+color:#bbb;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+
+<div class="logo">Hope Pages</div>
+
+<nav class="nav">
+<a href="../index.html">Home</a>
+
+</nav>
+
+</header>
+
+<!-- ===== POST ===== -->
+<div class="post-container">
+
+<h1 class="post-title">
+அதிசய மரம்
+</h1>
+
+<div class="post-meta">
+By Hope Pages • May 2026
+</div>
+
+<img
+src="../images/poster/the-voice-tree.webp"
+class="post-img"
+alt="சிங்கமும் எலியும்">
+
+<!-- ===== CONTENT ===== -->
+<div class="post-content">
+
+<p>
+ஒரு சிறிய கிராமத்தில் ஒரு பெரிய ஆலமரம் ஒன்று இருந்தது அந்த மரம் நூறு வருடங்களுக்கு மேல் பழமையானது கிராமத்தில் இருக்கும் குழந்தைகள் தினமும் இந்த மரத்தின் கீழ் விளையாடுவார்கள்.
+</p>
+<p>
+ இந்த மரம் குழந்தைகளுக்கு மட்டும் பயனுள்ள மரமாக இல்லாமல் பெரியவர்களுக்கும் பயனுள்ள மரமாக இருந்து வந்தது. வெயில் காலங்களில் இந்த மரத்தடியில் நிழலுக்கும் குளிர்ச்சிக்கும் கிராம மக்கள் தஞ்சம் அடைவார்கள்.
+</p>
+<p>
+ இப்படித்தான் ஒரு நாள் அருண் என்ற 13 வயது நிறைந்த பையன் தனியாக மரத்தின் கீழ அமர்ந்து அழுது கொண்டு இருந்தான்.
+அப்போது திடீரென மரம் பேசத் தொடங்கியது.
+</p>
+<p>
+ குழந்தாய் ஏன் அழுது கொண்டு இருக்கிறாய் ? இதை பார்த்த அருண் அதிர்ச்சி அடைந்தான்.
+</p>
+<p>
+ நான் தேர்வில் குறைவான மதிப்பெண் எடுத்து தேர்வில் தோல்வி அடைந்தேன் என்றான்.
+</p>
+<p>
+ மரம் சிரித்தது, ஒரு தோல்வி வாழ்க்கையின் முடிவு அல்ல,  நான் கூட சிறிய செடியாக இருந்தபோது பல புயல்களை சந்தித்தேன். ஆனால் பொறுமையாக இருந்தேன், பொறுமையாக வளர்ந்தேன். 
+</p>
+<p>
+நீயும் பொறுமையாக கடக்க கற்றுக் கொள், எதிர்காலம் உன்னை வியப்பில் காட்டும்.  இந்த தேர்வில் தோல்வி என்றால் அடுத்த தேர்வில் உன்னை தயார் படுத்திக் கொள் இதைவிட நல்ல மதிப்பெண் பெறுவாய்.
+</p>
+<p>
+ அன்று முதல் மரமும் அருணும் நல்ல நண்பர்கள் ஆனார்கள்.
+</p>
+ 
+
+
+<!-- MORAL -->
+<div class="moral">
+
+<h3>கற்க வேண்டிய பாடம்:</h3>
+
+<p>
+தோல்வி என்பது ஒரு முயற்சி தான். அது வெற்றிக்கான ஆரம்ப படி .
+</p>
+
+</div>
+
+<p>
+அதன் பிறகு மரம் மற்ற குழந்தைகளுக்கு அறிவுரை கூற தொடங்கியது. அந்த கிராமத்தில் உள்ள குழந்தைகள் எப்போதும் மரத்தின் கீழ் விளையாட தொடங்கினார்கள்.
+</p>
+<p>
+ குழந்தைகள் வீட்டில் உள்ள பெற்றோர்களிடம் எப்போதும் அந்த மரத்தை பற்றிய பேசிக் கொண்டு இருந்தார்கள் மரம் எப்படி பேசும் என்று பெற்றோர்கள் சிரிக்க தொடங்கினார்கள்.
+</p>
+<p>
+நாட்கள் செல்ல செல்ல குழந்தைகள் அந்த ஆலமரத்தை பற்றி அதிகமாக பேசினார்கள் இதனால் பெற்றோர்கள் பயப்பட தொடங்கினார்கள்.
+நம்ம பிள்ளைகளுக்கும் என்ன ஆகிவிட்டது? இதை தடுக்க அந்த மரத்தை வெட்ட வேண்டும் என்று அனைத்து பெற்றோர்களும் முடிவு எடுத்தார்கள்...
+</p>
+<p>
+ கதை தொடரும். </p>
+
+</div>
+
+<!-- ===== SHARE ===== -->
+<div class="share-section">
+
+<h3>Share this post</h3>
+
+<div class="share-icons">
+
+<a id="whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+</a>
+
+<a id="facebook" target="_blank">
+<i class="fa-brands fa-facebook"></i>
+Facebook
+</a>
+
+<a id="twitter" target="_blank">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a>
+
+<button onclick="copyLink()">
+<i class="fa-solid fa-link"></i>
+Copy Link
+</button>
+
+</div>
+</div>
+
+<!-- RELATED POSTS -->
+<div class="related-section">
+
+<h2>Related Posts</h2>
+
+<div id="relatedPosts" class="related-container"></div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<h2 class="footer-logo">Hope Pages</h2>
+
+<p class="footer-text">
+Stories, learning, and inspiration for everyone.
+</p>
+
+<div class="footer-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../about.html">About</a>
+
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../author.html">Hari Prasath.M </a>
+
+<!-- <a href="#">Contact</a> -->
+
+</div>
+
+<p class="footer-copy">
+© 2026 Hope Pages. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script src="../post.js"></script>
+
+<script>
+
+/* =========================================
+   SHARE BUTTONS
+========================================= */
+
+const url = window.location.href;
+
+const text =
+document.querySelector(".post-title").innerText;
+
+document.getElementById("whatsapp").href =
+`https://wa.me/?text=${encodeURIComponent(text + " " + url)}`;
+
+document.getElementById("facebook").href =
+`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+
+document.getElementById("twitter").href =
+`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+
+function copyLink(){
+
+navigator.clipboard.writeText(url);
+
+alert("Link copied!");
+
+}
+
+/* =========================================
+   LOAD RELATED POSTS
+========================================= */
+
+loadRelatedPosts(
+"stories",
+"அதிசய மரம்"
+);
+
+</script>
+</body>
+</html>

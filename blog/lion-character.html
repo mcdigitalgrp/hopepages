@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>சிங்கத்தின் குணம்</title>
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+font-family:'Noto Sans Tamil', sans-serif;
+background:#f5f5f5;
+color:#222;
+}
+
+/* ===== HEADER ===== */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#003049;
+color:white;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+/* ===== POST CONTAINER ===== */
+.post-container{
+max-width:850px;
+margin:25px auto;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.post-title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.post-meta{
+color:gray;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.post-img{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* ===== CONTENT ===== */
+.post-content p{
+font-size:17px;
+line-height:1.9;
+margin-bottom:18px;
+text-align:justify;
+}
+
+/* ===== MORAL ===== */
+.moral{
+background:#fff3cd;
+padding:18px;
+border-left:5px solid #ffc107;
+margin-top:25px;
+border-radius:8px;
+}
+
+.moral h3{
+margin-bottom:10px;
+}
+
+/* ===== SHARE ===== */
+.share-section{
+margin-top:35px;
+padding-top:20px;
+border-top:1px solid #ddd;
+}
+
+.share-section h3{
+margin-bottom:15px;
+}
+
+.share-icons{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.share-icons a,
+.share-icons button{
+padding:10px 15px;
+border:none;
+border-radius:6px;
+color:white;
+font-size:14px;
+cursor:pointer;
+text-decoration:none;
+}
+
+#whatsapp{
+background:#25D366;
+}
+
+#facebook{
+background:#1877F2;
+}
+
+#twitter{
+background:#1DA1F2;
+}
+
+.share-icons button{
+background:#222;
+}
+
+/* ===== RELATED POSTS ===== */
+.related-section{
+margin-top:45px;
+}
+
+.related-section h2{
+margin-bottom:20px;
+font-size:24px;
+}
+
+.related-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.related-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+text-decoration:none;
+color:#222;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.related-card:hover{
+transform:translateY(-5px);
+}
+
+.related-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.related-card-content{
+padding:12px;
+}
+
+.related-card h4{
+font-size:16px;
+margin-bottom:8px;
+}
+
+.related-card p{
+font-size:13px;
+color:gray;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+.header{
+padding:15px 20px;
+}
+
+.post-container{
+margin:15px;
+padding:18px;
+}
+
+.post-title{
+font-size:24px;
+}
+
+.post-img{
+height:230px;
+}
+
+.nav{
+display:none;
+}
+
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+background:#003049;
+color:white;
+padding:40px 20px;
+margin-top:50px;
+text-align:center;
+}
+
+.footer-container{
+max-width:1000px;
+margin:auto;
+}
+
+.footer-logo{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.footer-text{
+font-size:15px;
+color:#ddd;
+margin-bottom:20px;
+}
+
+.footer-links{
+margin-bottom:20px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+.footer-copy{
+font-size:13px;
+color:#bbb;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+
+<div class="logo">Hope Pages</div>
+
+<nav class="nav">
+<a href="../index.html">Home</a>
+
+</nav>
+
+</header>
+
+<!-- ===== POST ===== -->
+<div class="post-container">
+
+<h1 class="post-title">
+சிங்கத்தின் குணம்
+</h1>
+
+<div class="post-meta">
+By Hope Pages • May 2026
+</div>
+
+<img
+src="../images/poster/the-lion-birds.webp"
+class="post-img"
+alt="சிங்கத்தின் குணம்">
+
+<!-- ===== CONTENT ===== -->
+<div class="post-content">
+
+<p>
+    ஒரு அடர்ந்த காட்டில் காட்டுக்கு ராஜாவான சிங்கம் ஒரு மாட்டை வேட்டையாடி சாப்பிட்டுக்கொண்டு இருந்தது.
+</p>
+<p>
+     திடீரென மாட்டின் ஒரு சிறிய எலும்பு சிங்கத்தின் வாயில் மாட்டியது நீண்ட நேரம் கழித்தும் சிங்கத்தால் அந்த எலும்பை எடுக்க முடியாமல் வலியில் கற்றத் தொடங்கியது.
+</p>
+<p>
+அப்போது மரக்கிளையில் அமர்ந்து இருந்த மரங்கொத்தி பறவை சிங்கத்தின் சத்தம் கேட்டு அங்கு வந்தது.
+
+</p>
+<p>
+ மரங்கொத்திய பார்த்த சிங்கம் உதவி கேட்டது அதற்கு பறவை கூறியது உங்களுக்கு நான் என்ன உதவி பண்ண வேண்டும் ?  என்று கேட்டது சிங்கம் என் வாயில் மாட்டியிருக்கும் அந்த எலும்பை எடுக்க எனக்கு உதவி பண்ணு.
+</p>
+<p>
+இதற்கு பறவை கூறியது நான் எப்படி உனக்கு உதவி பண்ண முடியும் நான் உன் வாயுக்குள் போனால் நீ என்னையும் சாப்பிட்டு விடுவாய், இதற்கு சிங்கம் நான் உன்னை சாப்பிட மாட்டேன் என்னை நம்பு என்றது.
+</p>
+<p>
+    சரி நான் நம்புகிறேன் என்று சிங்கத்தின் வாய்க்குள் சென்று அந்த எலும்பை எடுத்தது.
+</p>
+<p>
+     சிங்கம் நன்றி கூறியது பறவையும் பறந்து சென்றது அடுத்த நாள் சிங்கம் ஒரு மானை வேட்டையாடி சாப்பிட்டுக்கொண்டு இருந்தது.
+ இதை பார்த்த பறவை அங்கு வந்தது இந்த முறை பறவை கேட்டது சிங்கமே எனக்கு ஒரு உதவி பண்ண முடியுமா?  அதற்கு சிங்கம் கேட்டது என்ன உதவி வேண்டும் பறவைக்கு கூறியது எனக்கு இறைச்சி சாப்பிட்டு பார்க்கனும் ஆசை உள்ளது.
+ அந்த மான் இறைச்சியை எனக்கு கொஞ்சம் தர முடியுமா ? 
+</p>
+<p>
+    அதற்கு சிங்கம் கூறியது முடியாது நான் உனக்கு ஏற்கனவே உதவி பண்ணி இருக்கேன்.
+ பறவைக்கு புரியவில்லை நான் தானே உனக்கு உதவி பண்ணியிருக்கேன் நீ எப்போது எனக்கு உதவி பண்ணினாய் என்று கேட்டது.
+ சிங்கம் கூறியது நேற்று நீ என் வாயில் இருக்கும் போது உன்னை நான் சாப்பிட்டு இருப்பேன் ஆனால் நான் அப்படி செய்யவில்லை இதுவே உனக்கு நான் செய்த பெரிய உதவி, இப்போ இங்க இருந்து கிளம்புறியா அல்லது உன்னையும் சாப்பிட வா என்று கோபத்தோடு கூறியது.
+ பறவை உனக்கு போய் உதவி பண்ணுனேன் பாரு! என்று பறவை அங்கு இருந்து பறந்தது.
+</p>
+ 
+
+
+<!-- MORAL -->
+<div class="moral">
+
+<h3>கற்க வேண்டிய பாடம்:</h3>
+
+<p>
+இந்தக் கதைக்கான கற்க வேண்டிய பாடம், குட்டீஸ் உங்களால் கண்டுபிடிக்க முடிந்தால் hopepages2022@gmail.com என்ற மின்னஞ்சல் முகவரிக்கு உங்கள் பெயர் மற்றும் உங்கள் கருத்து இரண்டையும் அனுப்பி வையுங்கள். முதலில் வரும் கருந்தை உங்கள் பெயரோடு இந்த கதையில் இடம் பெறும்.
+</p>
+
+</div>
+
+</div>
+
+<!-- ===== SHARE ===== -->
+<div class="share-section">
+
+<h3>Share this post</h3>
+
+<div class="share-icons">
+
+<a id="whatsapp" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp
+</a>
+
+<a id="facebook" target="_blank">
+<i class="fa-brands fa-facebook"></i>
+Facebook
+</a>
+
+<a id="twitter" target="_blank">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a>
+
+<button onclick="copyLink()">
+<i class="fa-solid fa-link"></i>
+Copy Link
+</button>
+
+</div>
+</div>
+
+<!-- RELATED POSTS -->
+<div class="related-section">
+
+<h2>Related Posts</h2>
+
+<div id="relatedPosts" class="related-container"></div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<h2 class="footer-logo">Hope Pages</h2>
+
+<p class="footer-text">
+Stories, learning, and inspiration for everyone.
+</p>
+
+<div class="footer-links">
+
+<a href="../index.html">Home</a>
+
+<a href="../about.html">About</a>
+
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../author.html">Hari Prasath.M </a>
+
+<!-- <a href="#">Contact</a> -->
+
+</div>
+
+<p class="footer-copy">
+© 2026 Hope Pages. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script src="../post.js"></script>
+
+<script>
+
+/* =========================================
+   SHARE BUTTONS
+========================================= */
+
+const url = window.location.href;
+
+const text =
+document.querySelector(".post-title").innerText;
+
+document.getElementById("whatsapp").href =
+`https://wa.me/?text=${encodeURIComponent(text + " " + url)}`;
+
+document.getElementById("facebook").href =
+`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+
+document.getElementById("twitter").href =
+`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+
+function copyLink(){
+
+navigator.clipboard.writeText(url);
+
+alert("Link copied!");
+
+}
+
+/* =========================================
+   LOAD RELATED POSTS
+========================================= */
+
+loadRelatedPosts(
+"stories",
+"சிங்கத்தின் குணம்"
+);
+
+</script>
+</body>
+</html>
