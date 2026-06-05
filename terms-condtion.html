@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Terms & Conditions | Hope Pages</title>
-    <meta name="description" content="Hope Pages – தமிழ் குழந்தைகள் கதைகள் மற்றும் வாசிப்பு உலகம்">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!-- Google Font -->
@@ -123,8 +122,14 @@ color:#4facfe;
             header h1{
                 font-size:28px;
             }
+            
+        
         }
 
+           button{
+            background: none;
+            border: none;
+        }
     </style>
 </head>
 
@@ -132,7 +137,8 @@ color:#4facfe;
 
 <header>
 
-<a href="index.html" class="back-btn">←</a>
+
+<button onclick="goBack()" class="back-btn">←</button>
 
 <h1>HOPE PAGES</h1>
 
@@ -233,9 +239,12 @@ color:#4facfe;
 </div>
 
 </footer>
-
+<script>
+    function goBack(){
+        window.history.back();
+    }
+</script>
 
 
 </body>
 </html>
-
