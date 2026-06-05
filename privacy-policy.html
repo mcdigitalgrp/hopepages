@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Privacy Policy | Hope Pages</title>
-    <meta name="description" content="Hope Pages – தமிழ் குழந்தைகள் கதைகள் மற்றும் வாசிப்பு உலகம்">
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!-- Tamil Font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        button{
+            background: none;
+            border: none;
+        }
         *{
             margin:0;
             padding:0;
@@ -139,8 +142,7 @@ color:#4facfe;
 <body>
 
 <header>
-
-<a href="index.html" class="back-btn">←</a>
+<button onclick="goBack()" class="back-btn">←</button>
 
 <h1>HOPE PAGES</h1>
 
@@ -220,6 +222,10 @@ color:#4facfe;
 
 </footer>
 
+<script>
+    function goBack(){
+        window.history.back();
+    }
+</script>
 </body>
 </html>
-
